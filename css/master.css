@@ -1,0 +1,66 @@
+body{
+   margin: 0;
+   background: #282C34;
+}
+
+.container {
+ background-color: #282C34;
+ color: #ABB2BF;
+ font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+
+ position: absolute;
+ height: 100%;
+ width: 100%;
+
+ display: grid;
+ grid-template-rows: 1 3fr 2fr;
+ grid-template-areas:
+ "."
+ "main"
+ ".";
+
+ align-items: center;
+ justify-items: center;
+}
+
+/* The interface grid is nested
+   in the container grid */
+.interface {
+  grid-area: main;
+  display: grid;
+
+  grid-template-columns: min-content;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "title"
+  "links"
+  "projects";
+  grid-row-gap: 5px;
+
+  align-items: center;
+  justify-items: center;
+
+}
+
+
+/* These are the cells
+   within the Interface Grid */
+.title {
+grid-area: title;
+white-space: nowrap;
+}
+
+.links {
+ grid-area: links;
+}
+        .links img {
+          height: 100px;
+          width: 100px;
+        }
+
+.projects {
+ grid-area: projects;
+}
+        .projects img{
+         height: 50px;
+        }
