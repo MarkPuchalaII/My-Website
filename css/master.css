@@ -13,7 +13,7 @@ body{
  width: 100%;
 
  display: grid;
- grid-template-rows: 1 3fr 2fr;
+ grid-template-rows: 1fr 3fr 2fr;
  grid-template-areas:
  "."
  "main"
