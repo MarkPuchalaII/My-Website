@@ -1,34 +1,64 @@
+@font-face {
+ font-family : zeroesThree;
+ src : url(zeroesThree.otf);
+}
+
 * {
- margin: 0px;
- padding: 0px;
+ margin: 0;
+ padding: 0;
+ font-family: zeroesThree;
+ font-size: 26px;
 }
 
-.button{
- width: 50px;
- height: 50px;
- font-size: 25px;
- margin: 2px;
- cursor: pointer;
- border: none;
+button {
  color: white;
- background: #2A2A2A;
-} /* use #91E59F for background's right side */
-
-.textview{
- width: 203px;
- height: 50px;
- margin: 5px;
- font-size: 45px;
- padding: 5px;
+ background: #2a2a2a;
+ border: none;
 }
 
-.main{
+body {
+ background-image :
+  linear-gradient(
+   to right,
+   #FFFFFF, #FFFFFF 66%,
+   #91E59F 66%);
+
  position: absolute;
- top: 50%;
- left: 50%;
- transform: translateX(-50%)translateY(-50%);
+ height: 100%;
+ width: 100%;
+
+ display: grid;
+ grid-template-rows: 1fr 3fr 2fr;
+ grid-template-areas:
+ "."
+ "main"
+ ".";
+
+ align-items: center;
+ justify-items: center;
 }
 
-.site-branding{
- height:50px;
+.container {
+ grid-area: main;
+
+ display: grid;
+ grid-template-columns: repeat(4, 50px);
+ grid-template-rows: repeat(7, 50px);
+ grid-gap: 6px;
+}
+
+.site-branding {
+  grid-column: 1/5;
+  height: 50px;
+  }
+  .site-branding img {
+    width: 150px;
+  }
+
+.textview {
+ grid-column: 1/5;
+}
+
+.zero {
+ grid-column: 1/3;
 }

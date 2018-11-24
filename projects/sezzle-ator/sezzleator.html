@@ -1,52 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
  <head>
-  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  <title>Sezzle-ator!</title>
+  <meta charset="utf-8">
+  <title>Grid Tester</title>
  </head>
+
  <body>
-  <div class="main">
-   <a href="/"><img class="site-branding" src="https://d34uoa9py2cgca.cloudfront.net/sezzle-credit-website-assets/sezzle-logo-black-50.png" /></a>
-   <form name="form">
-    <input class="textview" name="textview"/>
 
-    <!-- This is a calculator! -->
-    <table>
-     <tr>
-      <td><input class="button" type="button" value="AC" onclick="clean()"></td>
-      <td><input class="button" type="button" value="±" onclick="insert()"></td>
-      <td><input class="button" type="button" value="%" onclick="insert('%')"></td>
-      <td><input class="button" type="button" value="÷" onclick="insert('/')"></td>
-     </tr>
-     <tr>
-      <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
-      <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
-      <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
-      <td><input class="button" type="button" value="×" onclick="insert('*')"></td>
-     </tr>
-     <tr>
-      <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
-      <td><input class="button" type="button" value="5" onclick="insert(5)"></td>
-      <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
-      <td><input class="button" type="button" value="-" onclick="insert('-')"></td>
-     </tr>
-     <tr>
-      <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
-      <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
-      <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
-      <td><input class="button" type="button" value="+" onclick="insert('+')"></td>
-     </tr>
-     <tr>
-      <td colspan=2><input class="button" style="width:106px" type="button" value="0" onclick="insert(0)"></td>
-      <td><input class="button" type="button" value="." onclick="insert('.')"></td>
-      <td><input class="button" type="button" value="=" onclick="equal()"></td>
-     </tr>
-    </table>
-   </form>
+  <div class="container">
+
+   <a class="site-branding" href="/"/><img src="https://d34uoa9py2cgca.cloudfront.net/sezzle-credit-website-assets/sezzle-logo-black-50.png" alt="Sezzle Logo"/></a>
+
+   <input class="textview" name="textview"/>
+
+   <button type="button" onclick="clean()">AC</button>
+   <button type="button" onclick="insert()">±</button>
+   <button type="button" onclick="insert('%')">%</button>
+   <button type="button" onclick="insert('/')">÷</button>
+
+   <button type="button" onclick="insert(7)">7</button>
+   <button type="button" onclick="insert(8)">8</button>
+   <button type="button" onclick="insert(9)">9</button>
+   <button type="button" onclick="insert('*')">×</button>
+
+   <button type="button" onclick="insert(4)">4</button>
+   <button type="button" onclick="insert(5)">5</button>
+   <button type="button" onclick="insert(6)">6</button>
+   <button type="button" onclick="insert('-')">-</button>
+
+   <button type="button" onclick="insert(1)">1</button>
+   <button type="button" onclick="insert(2)">2</button>
+   <button type="button" onclick="insert(3)">3</button>
+   <button type="button" onclick="insert('+')">+</button>
+
+   <button class="zero" type="button" onclick="insert(0)">0</button>
+   <button type="button" onclick="insert('.')">.</button>
+   <button type="button" onclick="equal()">=</button>
+
   </div>
- </body>
 
+ </body>
 </html>
