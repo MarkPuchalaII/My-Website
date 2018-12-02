@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
  <head>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
+
+ </head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta charset="utf-8">
-  <title>Grid Tester</title>
+  <title>Sezzle-ator</title>
+
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
  </head>
 
  <body>
-
   <div class="container">
 
    <a class="site-branding" href="/"/><img src="https://d34uoa9py2cgca.cloudfront.net/sezzle-credit-website-assets/sezzle-logo-black-50.png" alt="Sezzle Logo"/></a>
 
-   <input class="textview" name="textview"/>
+   <input id="display" value="0" >
 
-   <button type="button" onclick="clean()">AC</button>
-   <button type="button" onclick="insert()">±</button>
-   <button type="button" onclick="insert('%')">%</button>
-   <button type="button" onclick="insert('/')">÷</button>
+   <div id="function" onclick="ac()">AC</div>
+   <div id="function" onclick="plusminus()">±</div>
+   <div id="function" onclick="insert('%')">%</div>
+   <div id="operator" onclick="operate('/')">÷</div>
 
-   <button type="button" onclick="insert(7)">7</button>
-   <button type="button" onclick="insert(8)">8</button>
-   <button type="button" onclick="insert(9)">9</button>
-   <button type="button" onclick="insert('*')">×</button>
+   <div onclick="insert(7)">7</div>
+   <div onclick="insert(8)">8</div>
+   <div onclick="insert(9)">9</div>
+   <div id="operator" onclick="operate('*')">×</div>
 
-   <button type="button" onclick="insert(4)">4</button>
-   <button type="button" onclick="insert(5)">5</button>
-   <button type="button" onclick="insert(6)">6</button>
-   <button type="button" onclick="insert('-')">-</button>
+   <div onclick="insert(4)">4</div>
+   <div onclick="insert(5)">5</div>
+   <div onclick="insert(6)">6</div>
+   <div id="operator" onclick="operate('-')">-</div>
 
-   <button type="button" onclick="insert(1)">1</button>
-   <button type="button" onclick="insert(2)">2</button>
-   <button type="button" onclick="insert(3)">3</button>
-   <button type="button" onclick="insert('+')">+</button>
+   <div onclick="insert(1)">1</div>
+   <div onclick="insert(2)">2</div>
+   <div onclick="insert(3)">3</div>
+   <div id="operator" onclick="operate('+')">+</div>
 
-   <button class="zero" type="button" onclick="insert(0)">0</button>
-   <button type="button" onclick="insert('.')">.</button>
-   <button type="button" onclick="equal()">=</button>
+   <div class="zero" onclick="insert(0)">0</div>
+   <div onclick="deci()">.</div>
+   <div id="operator" onclick="solve()">=</div>
 
   </div>
 
