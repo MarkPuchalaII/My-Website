@@ -1,1 +1,3 @@
-I'm currently figuring out how to get my website's source code and the like all loaded up on here.
+I have not touched this in forever and need more structure.
+It's finally on my radar, though!
+Feel free to send me a comment if there's something you wish you could see, here!
